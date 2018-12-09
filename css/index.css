@@ -34,6 +34,12 @@ a {
 img {
   width: 100%;
 }
+.section5 {
+  background: url('../images/pic-5.png') no-repeat top center / 100% auto;
+}
+.section6 {
+  background: url('../images/pic-6.png') no-repeat top center / 100% auto;
+}
 .pic {
   display: none;
   background: url('../images/pic1.png') no-repeat top center / 100% auto;
@@ -59,17 +65,33 @@ img {
 }
 .pic5 {
   padding-left: 0.96rem;
-  padding-top: 3.413rem;
+  padding-top: 3.46rem;
 }
-.pic5 img{
+.pic6 {
+  padding-left: 0.99rem;
+  padding-top: 2.37rem;
+}
+.pic5 div,.pic6 div{
+  display: inline-block;
+}
+.pic5 p,.pic6 p {
+  width: 3.6266rem;
+  height: 2.48rem;
+}
+.pic5 img,.pic6 img{
   width: 3.6266rem;
   height: auto;
+  border-radius: 0.28rem;
 }
 .pic5-right {
   margin-left: 0.51rem;
 }
 .pic5-bottom {
   margin-top: 1.28rem;
+}
+.pic6-bottom {
+  margin-top: 0.88rem;
+
 }
 /* .zoomify img{
   width: 100%;

@@ -21,7 +21,7 @@
 </head>
 <body>
 	<span class="musicIcon"></span>
-	<audio src="media/music.mp3" id="music" autoplay loop="loop"></audio>
+	<!--<audio src="media/music.mp3" id="music" autoplay loop="loop"></audio>-->
 
 	<!-- fullpage -->
  	<div id="fullpage">
@@ -85,19 +85,18 @@
 			</div>
 			<span class="arrow"></span>
  		</div>
-		<div class="section section5" style="background: url('images/pic-5.png') no-repeat top center / 100% auto;">
+		<div class="section section5">
 			<div class="logo">
 				<img src="images/logo.png" class="logo" alt="">
  			</div>
 			<div class="section-contain firstpage">
 				<div class="contain">
 					<div class="pic5 zoomify">
-						<img src="images/pic-5-1.png" alt="">
-						<img src="images/pic-5-2.png" alt="" class="pic5-right">
-						<img src="images/pic-5-3.png" alt="" class="pic5-bottom">
-						<img src="images/pic-5-4.png" alt="" class="pic5-right pic5-bottom">
+						<div><p><img src="images/pic-5-1.jpg" alt=""></p></div>
+						<div class="pic5-right"><p><img src="images/pic-5-2.jpg" alt=""></p></div>
+						<div class="pic5-bottom"><p><img src="images/pic-5-3.jpg" alt=""></p></div>
+						<div class="pic5-right pic5-bottom"><p><img src="images/pic-5-4.jpg" alt=""></p></div>
 					</div>
-					<!-- <img src="images/pic-5.png" alt=""> -->
 				</div>
 			</div>
 			<span class="arrow"></span>
@@ -108,7 +107,14 @@
  			</div>
 			<div class="section-contain firstpage">
 				<div class="contain">
-					<img src="images/pic-6.png" alt="">
+					<div class="pic6 zoomify">
+						<div><p><img src="images/pic-6-1.jpg" alt=""></p></div>
+						<div class="pic5-right"><p><img src="images/pic-6-2.jpg" alt=""></p></div>
+						<div class="pic6-bottom"><p><img src="images/pic-6-3.jpg" alt=""></p></div>
+						<div class="pic6-bottom pic5-right"><p><img src="images/pic-6-4.jpg" alt=""></p></div>
+						<div class="pic6-bottom"><p><img src="images/pic-6-5.jpg" alt=""></p></div>
+						<div class="pic6-bottom pic5-right"><p><img src="images/pic-6-6.jpg" alt=""></p></div>
+					</div>
 				</div>
 			</div>
 			<span class="arrow"></span>
@@ -151,7 +157,7 @@
 	<script src="js/zoomify.min.js"></script>
 	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 	<script type="text/javascript">
-	function autoPlayAudio1() {
+	function autoPlayAudio() {
 		 wx.config({
 				 debug: false,
 				 appId: '',

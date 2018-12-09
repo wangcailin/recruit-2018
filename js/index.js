@@ -1,6 +1,9 @@
 $(function(){
 
-	$('.zoomify img').zoomify();
+	$('.zoomify img').zoomify({
+		"duration":300,
+		"easing":"linear"
+	});
 
 
 	var drugfalg = true;//限制滑动
