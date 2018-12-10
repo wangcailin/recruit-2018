@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=750, target-densitydpi=device-dpi, user-scalable=0">
+	<title>recruit</title>
+	<link rel="stylesheet" href="__CDN__/assets/css/frontend/fullpage.min.css">
+	<link rel="stylesheet" href="__CDN__/assets/css/frontend/index.css?v=1.0.1">
+	<script>
+        document.addEventListener('DOMContentLoaded', function () { //添加监听DOM 结构是否加载完，（不包含图片和其他资源）
+            function audioAutoPlay() {
+                var audio = document.getElementById('music');//获取音乐标签的id
+                audio.play(); //播放
+                document.addEventListener("WeixinJSBridgeReady", function () { //监听微信准备就绪事件，只能在微信用
+                    audio.play(); //播放
+                }, false);
+            }
+            audioAutoPlay();
+        });
+	</script>
+	<style>
+		.form input {
+			background: url('__CDN__/assets/img/frontend/pic-8-2.png') no-repeat center center / 100% auto;
+		}
+		.arrow {
+			background: url('__CDN__/assets/img/frontend/wm-arrow.png') no-repeat center center / cover;
+		}
+	</style>
+</head>
+<body>
+	<span class="musicIcon" style="  background: url('__CDN__/assets/img/frontend/music-2.png') no-repeat center center / contain;"></span>
+	<audio src="__CDN__/assets/media/music.mp3" id="music" autoplay loop="loop"></audio>
+
+	<!-- fullpage -->
+ 	<div id="fullpage">
+ 		<div class="section section1">
+ 			<div class="logo">
+ 				<img src="__CDN__/assets/img/frontend/logo.png" class="logo" alt="">
+ 			</div>
+ 			<div class="section-contain firstpage">
+ 				<div class="contain">
+					<img src="__CDN__/assets/img/frontend/pic-1.png" alt="">
+ 				</div>
+ 			</div>
+ 			<span class="arrow"></span>
+ 		</div>
+ 		<div class="section section2">
+ 			<div class="logo">
+				<img src="__CDN__/assets/img/frontend/logo.png" class="logo" alt="">
+ 			</div>
+			<div class="section-contain firstpage">
+ 				<div class="contain">
+					<img src="__CDN__/assets/img/frontend/pic-2.png" alt="">
+ 				</div>
+ 			</div>
+ 			<span class="arrow"></span>
+ 		</div>
+ 		<div class="section section3">
+ 			<div class="logo">
+				<img src="__CDN__/assets/img/frontend/logo.png" class="logo" alt="">
+ 			</div>
+			<div class="section-contain firstpage" style="background: url('__CDN__/assets/img/frontend/pic-3.png') no-repeat top center / 100% auto;">
+ 				<div class="contain">
+					<div class="pic3">
+							<img src="__CDN__/assets/img/frontend/pic-3-1.png" alt="" onclick="showPic(1)">
+							<img src="__CDN__/assets/img/frontend/pic-3-2.png" alt="" onclick="showPic(2)">
+							<img src="__CDN__/assets/img/frontend/pic-3-3.png" alt="" onclick="showPic(3)">
+							<img src="__CDN__/assets/img/frontend/pic-3-4.png" alt="" onclick="showPic(4)">
+							<img src="__CDN__/assets/img/frontend/pic-3-5.png" alt="" onclick="showPic(5)">
+							<img src="__CDN__/assets/img/frontend/pic-3-6.png" alt="">
+					</div>
+					<div class="pic" style="background: url('__CDN__/assets/img/frontend/pic1.png') no-repeat top center / 100% auto;">
+						<div class="pic-cont">
+							<img src="" alt="">
+						</div>
+						<div class="pic-back">
+							<img src="__CDN__/assets/img/frontend/pic1-back.png" alt="" onclick="hidePic()">
+						</div>
+					</div>
+ 				</div>
+
+ 			</div>
+ 			<span class="arrow"></span>
+ 		</div>
+		<div class="section section4">
+			<div class="logo">
+				<img src="__CDN__/assets/img/frontend/logo.png" class="logo" alt="">
+ 			</div>
+			<div class="section-contain firstpage">
+				<div class="contain">
+					<img src="__CDN__/assets/img/frontend/pic-4.png" alt="">
+				</div>
+			</div>
+			<span class="arrow"></span>
+ 		</div>
+		<div class="section section5" style="background: url('__CDN__/assets/img/frontend/pic-5.png') no-repeat top center / 100% auto;">
+			<div class="logo">
+				<img src="__CDN__/assets/img/frontend/logo.png" class="logo" alt="">
+ 			</div>
+			<div class="section-contain firstpage">
+				<div class="contain">
+					<div class="pic5 zoomify">
+						<div><p><img src="__CDN__/assets/img/frontend/pic-5-1.jpg" alt=""></p></div>
+						<div class="pic5-right"><p><img src="__CDN__/assets/img/frontend/pic-5-2.jpg" alt=""></p></div>
+						<div class="pic5-bottom"><p><img src="__CDN__/assets/img/frontend/pic-5-3.jpg" alt=""></p></div>
+						<div class="pic5-right pic5-bottom"><p><img src="__CDN__/assets/img/frontend/pic-5-4.jpg" alt=""></p></div>
+					</div>
+				</div>
+			</div>
+			<span class="arrow"></span>
+ 		</div>
+		<div class="section section6" style="background: url('__CDN__/assets/img/frontend/pic-6.png') no-repeat top center / 100% auto;">
+			<div class="logo">
+				<img src="__CDN__/assets/img/frontend/logo.png" class="logo" alt="">
+ 			</div>
+			<div class="section-contain firstpage">
+				<div class="contain">
+					<div class="pic6 zoomify">
+						<div><p><img src="__CDN__/assets/img/frontend/pic-6-1.jpg" alt=""></p></div>
+						<div class="pic5-right"><p><img src="__CDN__/assets/img/frontend/pic-6-2.jpg" alt=""></p></div>
+						<div class="pic6-bottom"><p><img src="__CDN__/assets/img/frontend/pic-6-3.jpg" alt=""></p></div>
+						<div class="pic6-bottom pic5-right"><p><img src="__CDN__/assets/img/frontend/pic-6-4.jpg" alt=""></p></div>
+						<div class="pic6-bottom"><p><img src="__CDN__/assets/img/frontend/pic-6-5.jpg" alt=""></p></div>
+						<div class="pic6-bottom pic5-right"><p><img src="__CDN__/assets/img/frontend/pic-6-6.jpg" alt=""></p></div>
+					</div>
+				</div>
+			</div>
+			<span class="arrow"></span>
+ 		</div>
+		<div class="section section7">
+			<div class="logo">
+				<img src="__CDN__/assets/img/frontend/logo.png" class="logo" alt="">
+ 			</div>
+			<div class="section-contain firstpage">
+				<div class="contain">
+					<img src="__CDN__/assets/img/frontend/pic-7.png" alt="">
+				</div>
+			</div>
+			<span class="arrow"></span>
+ 		</div>
+		<div class="section section8">
+			<div class="logo">
+				<img src="__CDN__/assets/img/frontend/logo.png" class="logo" alt="">
+ 			</div>
+			<div class="section-contain firstpage" style="height:100%;background: url('__CDN__/assets/img/frontend/pic-8.png') no-repeat top center / 100% auto;">
+				<form action="" method="post" class="form">
+					<input type="text" name="row[name]" value="">
+					<input type="text" name="row[major]" value="">
+					<input type="text" name="row[school]" value="">
+					<input type="text" name="row[email]" value="">
+					<input type="text" name="row[tel]" value="">
+					<input type="text" name="row[graduate]" value="">
+					<input type="text" name="row[position]" value="">
+				</form>
+				<div class="submit">
+					<img src="__CDN__/assets/img/frontend/pic-8-1.png" alt="">
+				</div>
+			</div>
+ 		</div>
+ 	</div>
+	<script src="__CDN__/assets/js/frontend/jquery.1.11.3.js"></script>
+	<script src="__CDN__/assets/js/frontend/jquery.fullpage.min.js"></script>
+	<script src="__CDN__/assets/js/frontend/iscroll.min.js"></script>
+	<script src="__CDN__/assets/js/frontend/index.js?v=1.0.1"></script>
+	<script src="__CDN__/assets/js/frontend/zoomify.min.js"></script>
+	<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script type="text/javascript">
+	function autoPlayAudio() {
+		 wx.config({
+				 debug: false,
+				 appId: '',
+				 timestamp: 1,
+				 nonceStr: '',
+				 signature: '',
+				 jsApiList: []
+		 });
+		 wx.ready(function() {
+		     document.getElementById('music').play();
+		 });
+ 	}
+
+
+    function showPic(index){
+        $(".pic-cont img").attr('src', '__CDN__/assets/img/frontend/pic1-'+index+'.png');
+        $(".pic").show();
+    }
+    function hidePic(){
+        $(".pic").hide();
+    }
+
+	</script>
+</body>
+</html>
